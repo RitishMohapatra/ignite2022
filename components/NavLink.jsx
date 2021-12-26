@@ -10,7 +10,7 @@ export default function NavLink({ page, edge }) {
 				transition: {
 					duration: 3,
 				},
-			}}>
+			}}> 
 			<NextLink href={`/${pagePath === 'home' ? '' : pagePath}`}>
 				<a
 					className={`${

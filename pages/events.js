@@ -5,6 +5,7 @@ import FloatingLogo from '@/components/FloatingLogo'
 import EventContainer from '@/components/EventContainer'
 import EventCard from '@/components/EventCard'
 import Footer from '@/components/footer'
+import Navbar from '@/components/Navbar'
 
 export default function Events() {
 	const container = {
@@ -20,7 +21,10 @@ export default function Events() {
 	}
 
 	return (
+		<>
+		<Navbar />
 		<div className='h-full flex flex-row'>
+		
 			<NavContainer>
 				<NavLink page='home' edge='left' />
 				<NavLink page='about' edge='' />
@@ -78,5 +82,6 @@ export default function Events() {
 				<NavLink page='contact' edge='right' />
 			</NavContainer>
 		</div>
+		</>
 	)
 }

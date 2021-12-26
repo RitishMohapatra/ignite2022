@@ -1,7 +1,23 @@
 import Timer from "./Timer";
+import {
+  AiFillFacebook,
+  AiFillTwitterSquare,
+  AiFillInstagram,
+  AiFillYoutube,
+} from "react-icons/ai"; 
+
 function footer() {
   let date = new Date();
   let year = date.getFullYear();
+  const submitForm = () => {
+    window.open(
+      `mailto:ignite@nmims.edu.in?subject=${encodeURIComponent(
+        "Queries"
+      )}&body=${encodeURIComponent("name")} (${encodeURIComponent(
+        "email"
+      )}): ${encodeURIComponent("message")}`
+    );
+  };
   return (
     <div className="w-full bg-black text-white">
       <div className="xl:px-40 pb-12 lg:px-20 md:px-10 sm:px-5 px-10">
@@ -12,25 +28,28 @@ function footer() {
               data="/logo/fire.svg"
               className="h-24 md:h-26 lg:h-32"
             />
-            <div className="pt-8 m-5">
+            <div className="pt-8 pl-2 md:ml-5  ">
             <Timer
 						hideYear={true}
             hideSecond={true}
 						titlePosition='bottom'
-						size='small'
+						size='extra-small'
 						endAt={'2022-03-20 01:26:58'} // Date/Time
-            
-
 					/>
           </div>
+
           </div>
-          <div className="w-full sm:w-1/5 flex flex-col space-y-4 cursor-pointer">
-            <a className="">About</a>
-            <a className="">Site Map</a>
-            <a className="">Privacy Policy</a>
-            <a className="">Gallery</a>
-            <a className="">Team</a>
+          <hr className="md:hidden p-2 m-2 text-gray-500 "/>
+
+          <div className="w-full sm:w-1/5 flex flex-col space-y-4 ">
+            <a className="cursor-pointer">About</a>
+            <a className="cursor-pointer">Site Map</a>
+            <a className="cursor-pointer">Privacy Policy</a>
+            <a className="cursor-pointer">Gallery</a>
+            <a className="cursor-pointer">Team</a>
           </div>
+          <hr className="md:hidden p-2 m-2 text-gray-500 "/>
+
           <div className="w-full sm:w-1/5 flex flex-col space-y-4">
             <h1 className=" font-bold">Contact Us</h1>
 
@@ -43,7 +62,7 @@ function footer() {
               Plot No. 2, Pethapada, Next to Ramsheth Thakur College, Sector 33,
               Kharghar, Navi Mumbai, Maharashtra 410210
             </a>
-            <a className="flex cursor-pointer">
+            <a className="flex cursor-pointer" onClick={submitForm}>
               <object
                 type="image/svg+xml"
                 data="/logo/mail.svg"
@@ -52,36 +71,17 @@ function footer() {
               ignite@nmims.edu.in
             </a>
           </div>
-          <div className="w-full sm:w-1/5 flex flex-col  md:pl-10 cursor-pointer">
+          <hr className="md:hidden p-2 m-2 text-gray-500 "/>
+
+          <div className="w-full sm:w-1/5 flex flex-col  md:pl-10 ">
             <h1 className=" font-bold  ">Follow Us </h1>
-            <div className=" flex cursor-pointer  mt-5">
-            <div className="cursor-pointer">
-              <object
-                type="image/svg+xml"
-                data="/logo/ig.svg"
-                className="h-8 md:h-8 lg:h-8 m-1 cursor-pointer  "
-              />
+            <div className="flex mt-5 space-x-2 ">
+              <a href="https://www.instagram.com/nmignite/" target="_blank"><AiFillInstagram className="cursor:pointer text-yellow-300 text-4xl "/></a>
+              <a href="https://www.facebook.com/IGNITE19-295843527720790"  target="_blank"><AiFillFacebook  className="cursor:pointer text-yellow-300 text-4xl" /></a>
+              <a href="https://twitter.com/nmignite" target="_blank"><AiFillTwitterSquare  className="cursor:pointer text-yellow-300 text-4xl" /></a>
+              <a href="https://www.youtube.com/channel/UCNxk4RPg_wm0A_4v3dmji4w" target="_blank"><AiFillYoutube  className="cursor:pointer text-yellow-300 text-4xl" /></a>
               </div>
-              <div className="cursor-pointer">
-              <object
-                type="image/svg+xml"
-                data="/logo/fb.svg"
-                className="h-8 md:h-8 lg:h-7 m-1 cursor-pointer  "
-              />
-              </div>
-              
-              <object
-                type="image/svg+xml"
-                data="/logo/twitter-logo.svg"
-                className="h-6 md:h-5 lg:h-6 m-1 mt-2 cursor-pointer "
-              />
-              <div className="cursor-pointer">
-              <object
-                type="image/svg+xml"
-                data="/logo/yt.svg"
-                className="h-6 md:h-5 lg:h-6 m-1 cursor-pointer  "
-              /></div>
-            </div>
+            
           </div>
 
         </div>

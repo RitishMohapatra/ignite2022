@@ -3,11 +3,12 @@ export default function SocialCard({
 	text,
 	col = 'bg-transparent lg:hover:bg-transparent',
 	textcol = 'lg:text-white',
+	url
 }) {
 	return (
 		<a
 			className={`p-3 group flex flex-col items-center ${col} ${textcol} lg:bg-transparent transition-all duration-75 lg:group-hover:duration-300 rounded-xl relative`}
-			href=''
+			href={url}
 			target='_blank'>
 			<img
 				src={icon}

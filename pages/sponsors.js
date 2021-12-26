@@ -4,6 +4,7 @@ import NavLink from "@/components/NavLink";
 import FloatingLogo from "@/components/FloatingLogo";
 import Footer from "@/components/footer";
 import SponsorsCmp from "@/components/SponsorsCmp";
+import Navbar from '@/components/Navbar'
 
 export default function Sponsors() {
   const container = {
@@ -19,6 +20,8 @@ export default function Sponsors() {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="h-full flex flex-row">
       <NavContainer>
         <NavLink page="home" edge="left" />
@@ -33,7 +36,7 @@ export default function Sponsors() {
             <h1 className=" font-extrabold text-5xl text-center">
               Title Sponsers
             </h1>
-            <div className="flex item-center justify-center  p-5">
+            <div className="md:flex item-center justify-center  p-5">
 			<SponsorsCmp title='Geeks for Geeks' desc='Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quae dolores deserunt ea doloremque natus error, rerum quas
                     odio quaerat nam ex commodi hic, suscipit in a veritatis
@@ -49,7 +52,7 @@ export default function Sponsors() {
             <h1 className=" font-extrabold text-5xl text-center">
               #2 Sponsers
             </h1>
-			<div className="flex item-center justify-center  p-5">
+			<div className="md:flex item-center justify-center  p-5">
 			<SponsorsCmp title='Google!' desc='Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quae dolores deserunt ea doloremque natus error, rerum quas
                     odio quaerat nam ex commodi hic, suscipit in a veritatis
@@ -65,7 +68,7 @@ export default function Sponsors() {
             <h1 className=" font-extrabold text-5xl text-center">
               #3 Sponsers
             </h1>
-			<div className="flex item-center justify-center  p-5">
+			<div className="md:flex item-center justify-center  p-5">
 			<SponsorsCmp title='Geeks for Geeks' desc='Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quae dolores deserunt ea doloremque natus error, rerum quas
                     odio quaerat nam ex commodi hic, suscipit in a veritatis
@@ -94,5 +97,6 @@ export default function Sponsors() {
         <NavLink page="contact" edge="right" />
       </NavContainer>
     </div>
+    </>
   );
 }

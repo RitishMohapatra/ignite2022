@@ -1,6 +1,7 @@
 export default function Gallery() {
 	return (
-		<div id='timeline' className=' w-11/12 lg:5/6'>
+		<div className="hidden xl:block ml-24">
+		<div id='timeline' className='w-11/12 lg:5/6'>
 			<div className='tl-item'>
 				<div
 					className='tl-bg'
@@ -99,6 +100,7 @@ export default function Gallery() {
 					</p>
 				</div>
 			</div>
+		</div>
 		</div>
 	)
 }
