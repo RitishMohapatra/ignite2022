@@ -6,8 +6,9 @@ import SocialContainer from '@/components/SocialContainer'
 import SocialCard from '@/components/SocialCard'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/footer'
+import withTransition from "../HOC/withTransition";
 
-export default function Contact() {
+function Contact() {
 	return (
 		<>
 		<Navbar />
@@ -67,3 +68,5 @@ export default function Contact() {
 		</>
 	)
 }
+
+export default withTransition(Contact);

@@ -5,8 +5,9 @@ import FloatingLogo from "@/components/FloatingLogo";
 import Footer from "@/components/footer";
 import SponsorsCmp from "@/components/SponsorsCmp";
 import Navbar from '@/components/Navbar'
+import withTransition from "../HOC/withTransition";
 
-export default function Sponsors() {
+function Sponsors() {
   const container = {
     hidden: {
       opacity: 0.1,
@@ -100,3 +101,5 @@ export default function Sponsors() {
     </>
   );
 }
+
+export default withTransition(Sponsors);

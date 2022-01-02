@@ -6,8 +6,9 @@ import EventContainer from '@/components/EventContainer'
 import EventCard from '@/components/EventCard'
 import Footer from '@/components/footer'
 import Navbar from '@/components/Navbar'
+import withTransition from "../HOC/withTransition";
 
-export default function Events() {
+function Events() {
 	const container = {
 		hidden: {
 			opacity: 0.1,
@@ -85,3 +86,5 @@ export default function Events() {
 		</>
 	)
 }
+
+export default withTransition(Events);

@@ -6,8 +6,9 @@ import NavLink from '@/components/NavLink'
 import Timer from '@/components/Timer'
 import Footer from '@/components/footer'
 import Navbar from '@/components/Navbar'
+import withTransition from "../HOC/withTransition";
 
-export default function Home() {
+function Home() {
 	const container = {
 		hidden: {
 			opacity: 0.1,
@@ -37,7 +38,7 @@ export default function Home() {
 						className='h-24 md:h-32 lg:h-42 self-end bg-transparent'
 					/>
 				</div>
-				<div className='flex flex-col lg:flex-row justify-around items-center gap-y-10 lg:gap-x-20 bg-transparent'>
+				<div className='flex flex-col  justify-around items-center gap-y-10 lg:gap-x-20 bg-transparent'>
 				<div className='hidden md:block'>
 					<Timer
 						hideYear={true}
@@ -56,7 +57,7 @@ export default function Home() {
 						
 					/>
 					</div>
-					<div className='relative group'>
+					<div className='relative group my-5'>
 						<div className='absolute -inset-0.5 rounded-lg blur opacity-80 group-hover:opacity-100 bg-gradient-to-r from-amber-600 to-yellow-500 transition-all duration-500 group-hover:duration-300'></div>
 						<button className='relative px-3 lg:px-5 py-2 leading-none font-semibold text-base lg:text-lg text-white bg-rich-black rounded-lg'>
 							REGISTER NOW
@@ -98,3 +99,4 @@ export default function Home() {
 		</>
 	)
 }
+export default withTransition(Home);

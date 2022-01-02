@@ -27,6 +27,9 @@ module.exports = {
 				'bg03': "url('/img/hero-pattern.svg')",
 				'bg04': "url('/img/hero-pattern.svg')",
 			},
+			fontFamily:{
+				'abeezee': ['ABeeZee'],
+			},
 		},
 	},
 	variants: {

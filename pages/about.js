@@ -7,8 +7,9 @@ import Footer from '@/components/footer'
 import Navbar from '@/components/Navbar'
 import AboutMobile from '@/components/AboutMobile'
 import img01 from "../public/logo/lopo.png";
+import withTransition from "../HOC/withTransition";
 
-export default function About() {
+function About() {
 	const container = {
 		hidden: {
 			opacity: 0.1,
@@ -74,3 +75,5 @@ export default function About() {
 		</>
 	)
 }
+
+export default withTransition(About);
