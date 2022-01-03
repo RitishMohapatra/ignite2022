@@ -10,7 +10,7 @@ export default function NavLink({ page, edge }) {
 				transition: {
 					duration: 3,
 				},
-			}}> 
+			}}>
 			<NextLink href={`/${pagePath === 'home' ? '' : pagePath}`}>
 				<a
 					className={`${
@@ -31,7 +31,7 @@ export default function NavLink({ page, edge }) {
 							: pagePath === 'contact'
 							? 'bg-shadow'
 							: ''
-					} h-full w-full md:px-3 lg:px-4 hidden md:flex flex-col justify-center place-items-center transition-all duration-300 transform hover:scale-x-110`}>
+					} h-full w-full pt-10 px-3 hidden lg:flex flex-col justify-start place-items-center font-bold text-base transition-all`}>
 					{page
 						.toUpperCase()
 						.split('')
