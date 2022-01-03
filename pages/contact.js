@@ -1,13 +1,12 @@
 // Partial responsive
-
+import { AiOutlineMail } from 'react-icons/ai'
 import {
-	AiOutlineInstagram,
-	AiOutlineTwitter,
-	AiOutlineYoutube,
-	AiOutlineWhatsApp,
-	AiOutlineMail,
-} from 'react-icons/ai'
-import { SiDiscord } from 'react-icons/si'
+	FaInstagram,
+	FaTwitter,
+	FaDiscord,
+	FaYoutube,
+	FaWhatsapp,
+} from 'react-icons/fa'
 import PageContainer from 'components/PageContainer'
 import NavContainer from 'components/NavContainer'
 import NavLink from 'components/NavLink'
@@ -33,40 +32,41 @@ function Contact() {
 					<SocialContainer>
 						<SocialCard
 							text='Heart that post.'
-							col='bg-pink-500 lg:hover:bg-pink-500'
+							col='bg-pink-500 lg:hover:bg-gradient-to-bl lg:hover:from-pink-500 lg:hover:via-red-500 lg:hover:to-yellow-500'
 							url='https://www.instagram.com/nmignite/'>
-							<AiOutlineInstagram className='h-40 w-40' />
+							<FaInstagram className='h-20 w-20 mx-auto' />
 						</SocialCard>
 						<SocialCard
 							text='Follow the trend.'
-							col='bg-cyan-500 lg:hover:bg-cyan-500'
+							col='bg-sky-500 lg:hover:bg-sky-500'
 							url='https://twitter.com/nmignite'>
-							<AiOutlineTwitter className='h-40 w-40' />
+							<FaTwitter className='h-20 w-20 mx-auto' />
 						</SocialCard>
 						<SocialCard
 							text='Join the server.'
 							col='bg-indigo-500 lg:hover:bg-indigo-500'
 							url='https://discord.com/invite/3vBamUsdvY'>
-							<SiDiscord className='h-40 w-40' />
+							<FaDiscord className='h-20 w-20 mx-auto' />
 						</SocialCard>
 						<SocialCard
 							text='Catch us live.'
-							col='bg-rose-500 lg:hover:bg-rose-500'
+							col='bg-red-600 lg:hover:bg-red-600'
 							url='https://www.youtube.com/channel/UCNxk4RPg_wm0A_4v3dmji4w'>
-							<AiOutlineYoutube className='h-40 w-40' />
+							<FaYoutube className='h-20 w-20 mx-auto' />
 						</SocialCard>
 						<SocialCard
 							text='Check your DMs.'
+							// https://wa.me/<number>
 							col='bg-green-500 lg:hover:bg-green-500'
 							url=''>
-							<AiOutlineWhatsApp className='h-40 w-40' />
+							<FaWhatsapp className='h-20 w-20 mx-auto' />
 						</SocialCard>
 						<SocialCard
 							text='Those Emails.'
-							col='bg-white lg:hover:bg-white'
-							textcol='text-black lg:hover:text-black'
+							col='bg-black lg:hover:bg-black'
+							textcol='text-white lg:hover:text-white'
 							url=''>
-							<AiOutlineMail className='h-40 w-40' />
+							<AiOutlineMail className='h-20 w-20 mx-auto' />
 						</SocialCard>
 					</SocialContainer>
 				</PageContainer>

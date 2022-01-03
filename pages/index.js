@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 import PageContainer from 'components/PageContainer'
 import HomeCard from 'components/HomeCard'
 import NavContainer from 'components/NavContainer'
@@ -8,6 +9,7 @@ import Navbar from 'components/Navbar'
 import withTransition from 'HOC/withTransition'
 
 function Home() {
+	const router = useRouter()
 	const container = {
 		hidden: {
 			opacity: 0.1,
@@ -55,9 +57,24 @@ function Home() {
 							/>
 						</div>
 						<div className='relative group my-5'>
-							<div className='absolute -inset-0.5 rounded-lg blur opacity-80 group-hover:opacity-100 bg-gradient-to-r from-amber-600 to-yellow-500 transition-all duration-500 group-hover:duration-300'></div>
-							<button className='relative px-3 lg:px-5 py-2 leading-none font-semibold text-base lg:text-lg text-white bg-rich-black rounded-lg'>
+							<div className='absolute -inset-0.5 rounded-lg blur opacity-80 group-hover:opacity-100 bg-gradient-to-tr from-amber-600 to-yellow-500 transition-all duration-500 group-hover:duration-300'></div>
+							<button
+								onClick={() => router.push('/events')}
+								className='relative px-3 md:px-4 lg:px-5 py-2 flex flex-row items-center gap-x-2 text-base md:text-base lg:text-lg text-white bg-rich-black rounded-lg'>
 								REGISTER NOW
+								<svg
+									xmlns='http://www.w3.org/2000/svg'
+									className='h-5 transform transition-all duration-300 lg:group-hover:translate-x-1'
+									fill='none'
+									viewBox='0 0 24 24'
+									stroke='currentColor'>
+									<path
+										strokeLinecap='round'
+										strokeLinejoin='round'
+										strokeWidth={2}
+										d='M17 8l4 4m0 0l-4 4m4-4H3'
+									/>
+								</svg>
 							</button>
 						</div>
 					</div>
@@ -94,4 +111,5 @@ function Home() {
 		</>
 	)
 }
+
 export default withTransition(Home)

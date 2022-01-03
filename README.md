@@ -2,15 +2,16 @@
 
 Website for NMIMS Navi Mumbai TechFest IGNITE 4.0
 
+## Website for NMIMS Navi Mumbai TechFest IGNITE 4.0
 
-### Website for NMIMS Navi Mumbai TechFest IGNITE 4.0
+This website is developed and currently maintained by [Ritish Mohapatra](https://github.com/RitishMohapatra) and [Milind Sathe](https://github.com/jackzbazuka). Kindly contact us for any queries or to report any bugs.
 
-- [ ] Contact Page - old nmignite
-- [ ] events -modal design
-- [x] Font Implementation
-- [ ] Sponsorship cards design
-- [x] Home screen button adjustment
-- [ ] Flip design Improvise
-- [ ] navbar link text above
+## Tasks
 
-
+[ ] Event modal design  
+[ ] Sponsorship card design  
+[ ] Better flip design  
+[x] Navigation text at top  
+[x] Old contact page  
+[x] Home screen button adjustment  
+[x] Font

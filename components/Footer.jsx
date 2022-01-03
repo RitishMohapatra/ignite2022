@@ -408,7 +408,7 @@ export default function Footer() {
 					<Timer
 						hideYear={true}
 						titlePosition='bottom'
-						size='small'
+						size='extra-small'
 						endAt={'2022-03-20 01:26:58'} // Date/Time
 					/>
 				</div>

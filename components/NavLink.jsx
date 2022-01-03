@@ -29,7 +29,7 @@ export default function NavLink({ page, edge }) {
 							: pagePath === 'sponsors'
 							? 'bg-feldgrau'
 							: pagePath === 'contact'
-							? 'bg-shadow'
+							? 'bg-neutral-700'
 							: ''
 					} h-full w-full pt-10 px-3 hidden lg:flex flex-col justify-start place-items-center font-bold text-base transition-all`}>
 					{page

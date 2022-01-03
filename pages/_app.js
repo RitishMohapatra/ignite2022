@@ -59,7 +59,7 @@ export default function App({ Component, pageProps, router }) {
 					: pagePath === '/sponsors'
 					? 'bg-feldgrau'
 					: pagePath === '/contact'
-					? 'bg-neutral-600'
+					? 'bg-neutral-700'
 					: ''
 			}`}>
 			<NextHead>
